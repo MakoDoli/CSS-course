@@ -1,0 +1,25 @@
+.flexbox-container {
+  display: flex;
+}
+
+.flexbox-item {
+  width: 200px;
+  margin: 10px;
+  border: 3px solid palegreen;
+  background-color: gray;
+}
+/* flex grow stretches along main axis, 'stretch" stretches opposite to main axis*/
+.flexbox-item-1 {
+  min-height: 100px;
+}
+.flexbox-item-2 {
+  min-height: 200px;
+  flex-grow: 2;
+  /* flex-shrink: 0.5; */
+  flex-basis: 0; /* 0 means no initial/additional sizes */
+}
+.flexbox-item-3 {
+  min-height: 300px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
