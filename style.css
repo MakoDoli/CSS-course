@@ -9,14 +9,18 @@
   background-color: gray;
 }
 /* flex grow stretches along main axis, 'stretch" stretches opposite to main axis*/
+/* align-self overwrites parent's flexbox properties*/
 .flexbox-item-1 {
   min-height: 100px;
+  align-self: flex-end;
+  order: 3; /* changes/overwrites order in flexbox, NOT saccesibility friendly!!! screen-reader will read in original flexbox order, same for using tab to switch to elements*/
 }
 .flexbox-item-2 {
   min-height: 200px;
   flex-grow: 2;
   /* flex-shrink: 0.5; */
   flex-basis: 0; /* 0 means no initial/additional sizes */
+  align-self: center;
 }
 .flexbox-item-3 {
   min-height: 300px;
