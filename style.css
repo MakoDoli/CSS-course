@@ -22,6 +22,19 @@
 .grid-item-2 {
   grid-area: sidebar;
 } */
+.grid-item-1 {
+  /* grid-column-start: 1;
+  grid-column-end: 5; */
+  /* grid-column: 1/5; */
+  grid-column: 1/-1; /*ბოლო column-ის ჩათვლით დაიკავებს*/
+}
+
+/* თავიდან მარტო ორი column ზომა არის განსაზღვრული grid-container-ში, მაგრამ grid-item-end უფრო მეტი თუ დავუწერეთ, ანუ მეტი column თუ გამოვიდა, თვითონვე დაამატებს შეავსებს ქვედა row-ებში და იმ ორის ზომას გაითვალისწინებს და დანარჩენს თანაბრად გადაანაწილებს*/
+
+.grid-item-2 {
+  grid-row: 2/6;
+  /* grid-row: span 3; pirdapir ramdeni daikavos */
+}
 .grid-item {
   background-color: antiquewhite;
   border: 4px solid teal;
