@@ -5,6 +5,10 @@
   grid-row-gap: 20px;
   grid-column-gap: 20px;
   grid-gap: 20px;
+  /* grid-template-areas:
+    "header header"
+    "sidebar content"
+    "sidebar content"; */
   /* grid-template-columns: 200px 100px 150px; */
   /* grid-template-columns: 2fr 1fr ; */
   /* grid-template-columns: repeat(4, 100px); */
@@ -12,6 +16,12 @@
   /* grid-auto-rows: 100px; /*ზომას ეუბნები და თვითონ ალაგებს*/
   /*grid-template-rows: 200px; auto-სთან ერთად მარტო პირველ row-ს ზომა იქნება 200პხ, დანარჩენს თვითონ დაალაგებს */
 }
+/* .grid-item-1 {
+  grid-area: header;
+}
+.grid-item-2 {
+  grid-area: sidebar;
+} */
 .grid-item {
   background-color: antiquewhite;
   border: 4px solid teal;
