@@ -20,6 +20,9 @@
   /* justify-content: space-around; */
   align-content: center; /* needs height*/
   /* height: 100vh; */
+
+  /* grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];
+  grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line]; */
 }
 /* .grid-item-1 {
   grid-area: header;
@@ -44,12 +47,25 @@
   align-self: start;
   justify-self: end;
 }
+.grid-item-4 {
+  /* align-self: start; */
+  display: grid;
+  grid-row: span 2;
+  /* place-items: center; */
+}
+p {
+  place-self: center;
+}
 .grid-item {
   background-color: antiquewhite;
   border: 4px solid teal;
 }
+
+/*    FLEXBOX   */
 .flexbox-container {
   display: flex;
+
+  flex-wrap: wrap;
 }
 
 .flexbox-item {
@@ -63,7 +79,7 @@
 .flexbox-item-1 {
   min-height: 100px;
   align-self: flex-end;
-  order: 3; /* changes/overwrites order in flexbox, NOT saccesibility friendly!!! screen-reader will read in original flexbox order, same for using tab to switch to elements*/
+  /* order: 3; changes/overwrites order in flexbox, NOT saccesibility friendly!!! screen-reader will read in original flexbox order, same for using tab to switch to elements */
 }
 .flexbox-item-2 {
   min-height: 200px;
@@ -76,6 +92,30 @@
   min-height: 300px;
   flex-grow: 1;
   flex-basis: 0;
+}
+.flexbox-container-2 {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  height: 500px;
+  width: 300px;
+  gap: 40px 10px;
+}
+
+/* column wrap ცარიელი ადგილის შუაში ჩამოალაგებს, არ მიაბჯენს როგორც flex-row-ს შემთხვევაში*/
+
+.flexbox-item-4 {
+  height: 200px;
+  width: 100px;
+}
+
+.flexbox-item-5 {
+  height: 200px;
+  width: 100px;
+}
+.flexbox-item-6 {
+  height: 200px;
+  width: 100px;
 }
 
 /* background styling ofgrid container */
